@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration Form</title>
+</head>
+
+<body>
+
+    <h1>Employee Registration Form</h1>
+
+    <form action="#" method="post">
+
+        <!-- Personal Details -->
+        <fieldset>
+            <legend>Employee Personal Information</legend>
+
+            <p>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </p>
+
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </p>
+
+            <p>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="9876543210">
+            </p>
+
+            <p>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="18" max="65">
+            </p>
+
+            <p>
+                Gender:
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+
+                <input type="radio" id="other" name="gender" value="Other">
+                <label for="other">Other</label>
+            </p>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Job Information -->
+        <fieldset>
+            <legend>Job Information</legend>
+
+            <p>
+                <label for="empid">Employee ID:</label>
+                <input type="text" id="empid" name="empid" required>
+            </p>
+
+            <p>
+                <label for="department">Department:</label>
+                <select id="department" name="department">
+                    <option>Human Resource</option>
+                    <option>Finance</option>
+                    <option>Sales</option>
+                    <option>Marketing</option>
+                    <option>IT</option>
+                    <option>Production</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="designation">Designation:</label>
+                <input type="text" id="designation" name="designation">
+            </p>
+
+            <p>
+                <label for="salary">Salary:</label>
+                <input type="number" id="salary" name="salary" min="0">
+            </p>
+
+            <p>
+                <label for="experience">Years of Experience:</label>
+                <input type="number" id="experience" name="experience" min="0" max="40">
+            </p>
+
+            <p>
+                <label for="joiningdate">Joining Date:</label>
+                <input type="date" id="joiningdate" name="joiningdate">
+            </p>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Preferences -->
+        <fieldset>
+            <legend>Additional Information</legend>
+
+            <p>
+                <label for="photo">Upload Profile Photo:</label>
+                <input type="file" id="photo" name="photo">
+            </p>
+
+            <p>
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume" name="resume">
+            </p>
+
+            <p>
+                <label for="color">Favorite Color:</label>
+                <input type="color" id="color" name="color">
+            </p>
+
+            <p>
+                <label for="search">Search Skill:</label>
+                <input type="search" id="search" name="search">
+            </p>
+
+            <p>
+                <label for="skill">Skill Level:</label>
+                <input type="range" id="skill" name="skill" min="0" max="100">
+            </p>
+
+            <p>
+                <label for="website">Portfolio Website:</label>
+                <input type="url" id="website" name="website" placeholder="https://example.com">
+            </p>
+
+            <p>
+                <label for="country">Country:</label>
+                <select id="country" name="country">
+                    <option>India</option>
+                    <option>USA</option>
+                    <option>Canada</option>
+                    <option>Australia</option>
+                    <option>United Kingdom</option>
+                </select>
+            </p>
+
+            <p>
+                <input type="checkbox" id="agree" name="agree" required>
+                <label for="agree">I accept the company policies.</label>
+            </p>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Date and Time -->
+        <fieldset>
+            <legend>Date & Time Information</legend>
+
+            <p>
+                <label for="time">Interview Time:</label>
+                <input type="time" id="time" name="time">
+            </p>
+
+            <p>
+                <label for="month">Joining Month:</label>
+                <input type="month" id="month" name="month">
+            </p>
+
+            <p>
+                <label for="week">Joining Week:</label>
+                <input type="week" id="week" name="week">
+            </p>
+
+            <p>
+                <label for="meeting">Meeting Date & Time:</label>
+                <input type="datetime-local" id="meeting" name="meeting">
+            </p>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Form Controls -->
+        <fieldset>
+            <legend>Form Controls</legend>
+
+            <p>
+                <button type="button">Click Me</button>
+            </p>
+
+            <p>
+                <input type="image"
+                       src="https://via.placeholder.com/120x40?text=Register"
+                       alt="Register">
+            </p>
+
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+</html>
